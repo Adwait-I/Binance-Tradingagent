@@ -1,0 +1,5 @@
+2026-04-21 19:45:01,234 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 19:45:01,235 - bot.orders - INFO - Placing MARKET BUY order for 0.01 BTCUSDT...
+2026-04-21 19:45:01,235 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1713532451234, 'signature': '***'}
+2026-04-21 19:45:01,890 - bot.client - DEBUG - API Response: 200 {'orderId': 12345678, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'mock_client_order_id_1', 'price': '0', 'avgPrice': '65012.50', 'origQty': '0.01', 'executedQty': '0.01', 'cumQuote': '650.12', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1713532451800}
+2026-04-21 19:45:01,891 - bot.orders - INFO - Order placement successful.

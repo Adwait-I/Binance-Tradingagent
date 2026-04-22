@@ -1,0 +1,314 @@
+2026-04-21 19:51:07,570 - __main__ - ERROR - Input validation failed: Price is required for LIMIT orders.
+2026-04-21 19:51:07,570 - __main__ - ERROR - Input validation failed: Price is required for LIMIT orders.
+2026-04-21 21:18:38,892 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:18:38,892 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:18:38,892 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:18:38,892 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:18:38,892 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:18:38,892 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:18:39,005 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:18:39,005 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:18:39,011 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:18:39,011 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:18:46,620 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:18:46] "GET / HTTP/1.1" 200 -
+2026-04-21 21:18:46,620 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:18:46] "GET / HTTP/1.1" 200 -
+2026-04-21 21:18:47,276 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:18:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-21 21:18:47,276 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:18:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-21 21:18:51,337 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:18:51,337 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:18:51,338 - bot.orders - INFO - Placing MARKET BUY order for 0.002 BTCUSDT...
+2026-04-21 21:18:51,338 - bot.orders - INFO - Placing MARKET BUY order for 0.002 BTCUSDT...
+2026-04-21 21:18:51,338 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002, 'timestamp': 1776786531338, 'signature': '***'}
+2026-04-21 21:18:51,338 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002, 'timestamp': 1776786531338, 'signature': '***'}
+2026-04-21 21:18:51,762 - bot.client - ERROR - HTTP Error: 401 - {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 21:18:51,762 - bot.client - ERROR - HTTP Error: 401 - {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 21:18:51,762 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 21:18:51,762 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 21:18:51,762 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 21:18:51,762 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-04-21 21:18:51,764 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:18:51] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:18:51,764 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:18:51] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:21:54,417 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:21:54,417 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:21:54,418 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:21:54,418 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:21:54,418 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:21:54,418 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:21:54,535 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:21:54,535 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:21:54,540 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:21:54,540 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:21:58,501 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:21:58] "GET / HTTP/1.1" 200 -
+2026-04-21 21:21:58,501 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:21:58] "GET / HTTP/1.1" 200 -
+2026-04-21 21:22:04,220 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:22:04,220 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:22:04,221 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:22:04,221 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:22:04,221 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786724221, 'signature': '***'}
+2026-04-21 21:22:04,221 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786724221, 'signature': '***'}
+2026-04-21 21:22:04,458 - bot.client - DEBUG - API Response: 200 {'orderId': 13058169344, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'IRRHsSpri9VbMgazoItWrn', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786724404}
+2026-04-21 21:22:04,458 - bot.client - DEBUG - API Response: 200 {'orderId': 13058169344, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'IRRHsSpri9VbMgazoItWrn', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786724404}
+2026-04-21 21:22:04,460 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:22:04,460 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:22:04,461 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:22:04] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:22:04,461 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:22:04] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:22:52,751 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:22:52,751 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:22:52,752 - bot.orders - INFO - Placing LIMIT BUY order for 1.0 BTCUSDT...
+2026-04-21 21:22:52,752 - bot.orders - INFO - Placing LIMIT BUY order for 1.0 BTCUSDT...
+2026-04-21 21:22:52,752 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 75722.0, 'timeInForce': 'GTC', 'timestamp': 1776786772752, 'signature': '***'}
+2026-04-21 21:22:52,752 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 1.0, 'price': 75722.0, 'timeInForce': 'GTC', 'timestamp': 1776786772752, 'signature': '***'}
+2026-04-21 21:22:53,149 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:22:53,149 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:22:53,150 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:22:53,150 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:22:53,150 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:22:53,150 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:22:53,152 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:22:53] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:22:53,152 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:22:53] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:23:06,169 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:23:06,169 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:23:06,169 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:23:06,169 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:23:06,169 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786786169, 'signature': '***'}
+2026-04-21 21:23:06,169 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786786169, 'signature': '***'}
+2026-04-21 21:23:06,565 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:06,565 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:06,566 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:06,566 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:06,566 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:06,566 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:06,568 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:23:06] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:23:06,568 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:23:06] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:23:07,551 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:23:07,551 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:23:07,551 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:23:07,551 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:23:07,551 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786787551, 'signature': '***'}
+2026-04-21 21:23:07,551 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786787551, 'signature': '***'}
+2026-04-21 21:23:07,696 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:07,696 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:07,697 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:07,697 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:07,697 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:07,697 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:07,699 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:23:07] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:23:07,699 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:23:07] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:23:12,520 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:23:12,520 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:23:12,520 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:23:12,520 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:23:12,521 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786792521, 'signature': '***'}
+2026-04-21 21:23:12,521 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786792521, 'signature': '***'}
+2026-04-21 21:23:12,662 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:12,662 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:12,663 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:12,663 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:12,663 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:12,663 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:23:12,665 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:23:12] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:23:12,665 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:23:12] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:24:01,252 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:24:01,252 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:24:01,254 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:24:01,254 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:24:01,254 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786841254, 'signature': '***'}
+2026-04-21 21:24:01,254 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786841254, 'signature': '***'}
+2026-04-21 21:24:01,636 - bot.client - DEBUG - API Response: 200 {'orderId': 13058174212, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'DpTndstMqwRGzJTIcaKAhc', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786841594}
+2026-04-21 21:24:01,636 - bot.client - DEBUG - API Response: 200 {'orderId': 13058174212, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'DpTndstMqwRGzJTIcaKAhc', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786841594}
+2026-04-21 21:24:01,638 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:24:01,638 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:24:01,639 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:24:01] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:24:01,639 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:24:01] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:02,838 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:02,838 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:02,840 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:02,840 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:02,841 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786902840, 'signature': '***'}
+2026-04-21 21:25:02,841 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786902840, 'signature': '***'}
+2026-04-21 21:25:03,041 - bot.client - DEBUG - API Response: 200 {'orderId': 13058176774, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'QlesFIpV0B3VTq4E17yeh0', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786902998}
+2026-04-21 21:25:03,041 - bot.client - DEBUG - API Response: 200 {'orderId': 13058176774, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'QlesFIpV0B3VTq4E17yeh0', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786902998}
+2026-04-21 21:25:03,043 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:03,043 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:03,043 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:03] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:03,043 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:03] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:04,367 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:04,367 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:04,368 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:04,368 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:04,368 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786904368, 'signature': '***'}
+2026-04-21 21:25:04,368 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786904368, 'signature': '***'}
+2026-04-21 21:25:04,513 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:04,513 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:04,513 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:04,513 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:04,513 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:04,513 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:04,516 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:04] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:25:04,516 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:04] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:25:08,483 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:08,483 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:08,484 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:08,484 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:08,484 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786908484, 'signature': '***'}
+2026-04-21 21:25:08,484 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786908484, 'signature': '***'}
+2026-04-21 21:25:08,823 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177007, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'AwS0sxC3ZH6q3duc3b3UbL', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786908779}
+2026-04-21 21:25:08,823 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177007, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'AwS0sxC3ZH6q3duc3b3UbL', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786908779}
+2026-04-21 21:25:08,825 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:08,825 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:08,826 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:08] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:08,826 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:08] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:11,302 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:11,302 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:11,302 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:11,302 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:11,302 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786911302, 'signature': '***'}
+2026-04-21 21:25:11,302 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786911302, 'signature': '***'}
+2026-04-21 21:25:11,647 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177152, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'xOmO0EOKp00eZYhp5Lx0rW', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786911603}
+2026-04-21 21:25:11,647 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177152, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'xOmO0EOKp00eZYhp5Lx0rW', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786911603}
+2026-04-21 21:25:11,649 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:11,649 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:11,649 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:11] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:11,649 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:11] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:24,602 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:24,602 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:24,602 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:24,602 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:24,603 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786924602, 'signature': '***'}
+2026-04-21 21:25:24,603 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786924602, 'signature': '***'}
+2026-04-21 21:25:24,939 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177804, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'UH0hCPVeT7ZYuQWlW302Ru', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786924895}
+2026-04-21 21:25:24,939 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177804, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'UH0hCPVeT7ZYuQWlW302Ru', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786924895}
+2026-04-21 21:25:24,940 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:24,940 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:24,941 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:24] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:24,941 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:24] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:26,419 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:26,419 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:26,419 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:26,419 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:26,419 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786926419, 'signature': '***'}
+2026-04-21 21:25:26,419 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786926419, 'signature': '***'}
+2026-04-21 21:25:26,764 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177887, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'Ibl2vvqZKgXC2ARoOgu389', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786926719}
+2026-04-21 21:25:26,764 - bot.client - DEBUG - API Response: 200 {'orderId': 13058177887, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'Ibl2vvqZKgXC2ARoOgu389', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786926719}
+2026-04-21 21:25:26,766 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:26,766 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:26,766 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:26] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:26,766 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:26] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:27,586 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:27,586 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:27,587 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:27,587 - bot.orders - INFO - Placing MARKET SELL order for 1.0 BTCUSDT...
+2026-04-21 21:25:27,587 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786927587, 'signature': '***'}
+2026-04-21 21:25:27,587 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786927587, 'signature': '***'}
+2026-04-21 21:25:27,729 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:27,729 - bot.client - ERROR - HTTP Error: 400 - {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:27,729 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:27,729 - bot.orders - ERROR - Failed to place order: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:27,729 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:27,729 - __main__ - ERROR - UI Order placement failed: Binance API Error: {"code":-2019,"msg":"Margin is insufficient."}
+2026-04-21 21:25:27,731 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:27] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:25:27,731 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:27] "[35m[1mPOST /api/order HTTP/1.1[0m" 500 -
+2026-04-21 21:25:30,000 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:30,000 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:25:30,001 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:30,001 - bot.orders - INFO - Placing MARKET BUY order for 1.0 BTCUSDT...
+2026-04-21 21:25:30,001 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786930001, 'signature': '***'}
+2026-04-21 21:25:30,001 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0, 'timestamp': 1776786930001, 'signature': '***'}
+2026-04-21 21:25:30,146 - bot.client - DEBUG - API Response: 200 {'orderId': 13058178043, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'RCkpPSvR5KnWQeAlMqOjiM', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786930099}
+2026-04-21 21:25:30,146 - bot.client - DEBUG - API Response: 200 {'orderId': 13058178043, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'RCkpPSvR5KnWQeAlMqOjiM', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.0000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776786930099}
+2026-04-21 21:25:30,148 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:30,148 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:25:30,149 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:30] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:25:30,149 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:25:30] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:27:56,564 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:27:56] "GET / HTTP/1.1" 200 -
+2026-04-21 21:27:56,564 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:27:56] "GET / HTTP/1.1" 200 -
+2026-04-21 21:28:06,417 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:28:06,417 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:28:06,418 - bot.orders - INFO - Placing MARKET BUY order for 0.5 BTCUSDT...
+2026-04-21 21:28:06,418 - bot.orders - INFO - Placing MARKET BUY order for 0.5 BTCUSDT...
+2026-04-21 21:28:06,418 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.5, 'timestamp': 1776787086418, 'signature': '***'}
+2026-04-21 21:28:06,418 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.5, 'timestamp': 1776787086418, 'signature': '***'}
+2026-04-21 21:28:06,796 - bot.client - DEBUG - API Response: 200 {'orderId': 13058184532, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 't5RcACX3WDN1U1e7CxXNOz', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.5000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776787086752}
+2026-04-21 21:28:06,796 - bot.client - DEBUG - API Response: 200 {'orderId': 13058184532, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 't5RcACX3WDN1U1e7CxXNOz', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.5000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776787086752}
+2026-04-21 21:28:06,798 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:28:06,798 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:28:06,799 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:28:06] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:28:06,799 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:28:06] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:31:56,598 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:31:56,598 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:31:56,598 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:31:56,598 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:31:56,598 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:31:56,598 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:31:56,730 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:31:56,730 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:31:56,735 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:31:56,735 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:32:37,605 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:32:37,605 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:32:37,605 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:32:37,605 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:32:37,605 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:32:37,605 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:32:37,735 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:32:37,735 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:32:37,739 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:32:37,739 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:33:41,029 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:33:41,029 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-21 21:33:41,029 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:33:41,029 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:33:41,030 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:33:41,030 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:33:41,145 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:33:41,145 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:33:41,149 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:33:41,149 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:34:32,596 - werkzeug - INFO -  * Detected change in '/Users/ai/Projecta/new2/app.py', reloading
+2026-04-21 21:34:32,596 - werkzeug - INFO -  * Detected change in '/Users/ai/Projecta/new2/app.py', reloading
+2026-04-21 21:34:32,630 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:34:32,630 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:34:32,832 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:34:32,832 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:34:32,837 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:34:32,837 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:34:57,298 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-04-21 21:34:57,298 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-04-21 21:34:57,298 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:34:57,298 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 21:34:57,298 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:34:57,298 - werkzeug - INFO -  * Restarting with stat
+2026-04-21 21:34:57,429 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:34:57,429 - werkzeug - WARNING -  * Debugger is active!
+2026-04-21 21:34:57,433 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:34:57,433 - werkzeug - INFO -  * Debugger PIN: 104-759-136
+2026-04-21 21:34:57,807 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:34:57] "GET / HTTP/1.1" 200 -
+2026-04-21 21:34:57,807 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:34:57] "GET / HTTP/1.1" 200 -
+2026-04-21 21:34:58,584 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:34:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-21 21:34:58,584 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:34:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-21 21:35:01,007 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:35:01] "GET / HTTP/1.1" 200 -
+2026-04-21 21:35:01,007 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:35:01] "GET / HTTP/1.1" 200 -
+2026-04-21 21:35:06,098 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:35:06,098 - bot.client - INFO - Initialized BinanceFuturesClient with base_url: https://testnet.binancefuture.com
+2026-04-21 21:35:06,098 - bot.orders - INFO - Placing MARKET SELL order for 0.5 BTCUSDT...
+2026-04-21 21:35:06,098 - bot.orders - INFO - Placing MARKET SELL order for 0.5 BTCUSDT...
+2026-04-21 21:35:06,099 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.5, 'timestamp': 1776787506098, 'signature': '***'}
+2026-04-21 21:35:06,099 - bot.client - DEBUG - API Request: POST https://testnet.binancefuture.com/fapi/v1/order Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.5, 'timestamp': 1776787506098, 'signature': '***'}
+2026-04-21 21:35:06,535 - bot.client - DEBUG - API Response: 200 {'orderId': 13058205775, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'BArbskjrZjpdydSFbVVmpN', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.5000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776787506484}
+2026-04-21 21:35:06,535 - bot.client - DEBUG - API Response: 200 {'orderId': 13058205775, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'BArbskjrZjpdydSFbVVmpN', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.5000', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776787506484}
+2026-04-21 21:35:06,536 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:35:06,536 - bot.orders - INFO - Order placement successful.
+2026-04-21 21:35:06,537 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:35:06] "POST /api/order HTTP/1.1" 200 -
+2026-04-21 21:35:06,537 - werkzeug - INFO - 127.0.0.1 - - [21/Apr/2026 21:35:06] "POST /api/order HTTP/1.1" 200 -

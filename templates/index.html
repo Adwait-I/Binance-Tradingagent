@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Testnet Trading Bot</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary-accent: #00ff88;
+            --primary-hover: #00cc6a;
+            --sell-accent: #ff0055;
+            --text-main: #ffffff;
+            --text-muted: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(18, 22, 30) 90%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Abstract glowing orbs in background */
+        .orb {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            z-index: 0;
+            animation: float 20s infinite ease-in-out alternate;
+        }
+        .orb.green {
+            top: -100px;
+            left: -100px;
+            background: var(--primary-accent);
+        }
+        .orb.blue {
+            bottom: -100px;
+            right: -100px;
+            background: #00d2ff;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            width: 100%;
+            max-width: 480px;
+            z-index: 10;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
+            background: linear-gradient(90deg, #fff, #8b949e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.1);
+        }
+
+        .toggle-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .toggle-btn {
+            flex: 1;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .toggle-btn.active[data-val="BUY"] {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--primary-accent);
+            border-color: var(--primary-accent);
+        }
+
+        .toggle-btn.active[data-val="SELL"] {
+            background: rgba(255, 0, 85, 0.1);
+            color: var(--sell-accent);
+            border-color: var(--sell-accent);
+        }
+
+        .toggle-btn.active[data-val="MARKET"], .toggle-btn.active[data-val="LIMIT"] {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            border-color: var(--text-main);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            background: var(--primary-accent);
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-hover);
+        }
+
+        .submit-btn.sell-mode {
+            background: var(--sell-accent);
+            color: white;
+        }
+        
+        .submit-btn.sell-mode:hover {
+            background: #e6004c;
+        }
+
+        /* Result container styling */
+        #resultContainer {
+            margin-top: 24px;
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--glass-border);
+            display: none;
+            font-size: 14px;
+            animation: fadeIn 0.4s ease;
+        }
+
+        #resultContainer.success {
+            border-left: 4px solid var(--primary-accent);
+        }
+
+        #resultContainer.error {
+            border-left: 4px solid var(--sell-accent);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .result-item strong {
+            color: var(--text-muted);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Loader */
+        .loader {
+            border: 3px solid rgba(255,255,255,0.1);
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="orb green"></div>
+    <div class="orb blue"></div>
+
+    <div class="container">
+        <h1>Futures Bot</h1>
+        <p class="subtitle">Binance Testnet (USDT-M) Interface</p>
+
+        <form id="orderForm">
+            <div class="form-group">
+                <label>Symbol</label>
+                <input type="text" id="symbol" placeholder="BTCUSDT" value="BTCUSDT" required autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label>Side</label>
+                <div class="toggle-group" id="sideToggle">
+                    <button type="button" class="toggle-btn active" data-val="BUY">Buy / Long</button>
+                    <button type="button" class="toggle-btn" data-val="SELL">Sell / Short</button>
+                    <input type="hidden" id="side" value="BUY">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Order Type</label>
+                <div class="toggle-group" id="typeToggle">
+                    <button type="button" class="toggle-btn active" data-val="MARKET">Market</button>
+                    <button type="button" class="toggle-btn" data-val="LIMIT">Limit</button>
+                    <input type="hidden" id="orderType" value="MARKET">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Quantity</label>
+                <input type="number" id="quantity" placeholder="0.01" step="0.001" required autocomplete="off">
+            </div>
+
+            <div class="form-group" id="priceGroup" style="display: none;">
+                <label>Limit Price</label>
+                <input type="number" id="price" placeholder="60000.00" step="0.1" autocomplete="off">
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span id="btnText">Place Order</span>
+                <div class="loader" id="loader"></div>
+            </button>
+        </form>
+
+        <div id="resultContainer"></div>
+    </div>
+
+    <script>
+        // Toggle Logic
+        function setupToggle(groupId, inputId, callback) {
+            const group = document.getElementById(groupId);
+            const buttons = group.querySelectorAll('.toggle-btn');
+            const hiddenInput = document.getElementById(inputId);
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    hiddenInput.value = btn.getAttribute('data-val');
+                    if (callback) callback(hiddenInput.value);
+                });
+            });
+        }
+
+        setupToggle('sideToggle', 'side', (val) => {
+            const btn = document.getElementById('submitBtn');
+            if(val === 'SELL') {
+                btn.classList.add('sell-mode');
+            } else {
+                btn.classList.remove('sell-mode');
+            }
+        });
+
+        setupToggle('typeToggle', 'orderType', (val) => {
+            const priceGroup = document.getElementById('priceGroup');
+            const priceInput = document.getElementById('price');
+            if (val === 'LIMIT') {
+                priceGroup.style.display = 'block';
+                priceInput.required = true;
+            } else {
+                priceGroup.style.display = 'none';
+                priceInput.required = false;
+                priceInput.value = '';
+            }
+        });
+
+        // Form Submit Logic
+        document.getElementById('orderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const loader = document.getElementById('loader');
+            const resContainer = document.getElementById('resultContainer');
+
+            // Payload
+            const payload = {
+                symbol: document.getElementById('symbol').value.toUpperCase(),
+                side: document.getElementById('side').value,
+                type: document.getElementById('orderType').value,
+                quantity: parseFloat(document.getElementById('quantity').value),
+                price: document.getElementById('orderType').value === 'LIMIT' ? parseFloat(document.getElementById('price').value) : null
+            };
+
+            // UI State
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            loader.style.display = 'inline-block';
+            resContainer.style.display = 'none';
+
+            try {
+                const req = await fetch('/api/order', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(payload)
+                });
+                
+                const response = await req.json();
+                
+                resContainer.style.display = 'block';
+                resContainer.innerHTML = '';
+
+                if (req.ok && response.success) {
+                    resContainer.className = 'success';
+                    const d = response.data;
+                    resContainer.innerHTML = `
+                        <div style="color: var(--primary-accent); margin-bottom: 12px; font-weight: 600;">Order Successful!</div>
+                        <div class="result-item"><strong>Order ID:</strong> <span>${d.orderId || 'N/A'}</span></div>
+                        <div class="result-item"><strong>Status:</strong> <span>${d.status || 'N/A'}</span></div>
+                        <div class="result-item"><strong>Executed Qty:</strong> <span>${d.executedQty || '0'}</span></div>
+                        <div class="result-item"><strong>Avg Price:</strong> <span>${d.avgPrice || '0'}</span></div>
+                    `;
+                } else {
+                    resContainer.className = 'error';
+                    resContainer.innerHTML = `
+                        <div style="color: var(--sell-accent); margin-bottom: 12px; font-weight: 600;">Action Failed</div>
+                        <div style="color: #fff;">${response.error || 'Unknown error occurred'}</div>
+                    `;
+                }
+            } catch (err) {
+                resContainer.style.display = 'block';
+                resContainer.className = 'error';
+                resContainer.innerHTML = `
+                    <div style="color: var(--sell-accent); margin-bottom: 12px; font-weight: 600;">Network Error</div>
+                    <div style="color: #fff;">${err.message}</div>
+                `;
+            } finally {
+                submitBtn.disabled = false;
+                btnText.style.display = 'inline-block';
+                loader.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
