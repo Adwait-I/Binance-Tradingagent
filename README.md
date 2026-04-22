@@ -1,9 +1,5 @@
 # Binance Futures Testnet Trading Bot
 
-![Web UI](asset/UI%20.png)
-![Testnet](asset/testnet%20image.png)
-![Sell UI](asset/sell%20ui.png)
-
 
 A simple Python CLI application to place Market and Limit orders on the Binance Futures Testnet (USDT-M).
 
@@ -77,6 +73,11 @@ The UI allows you to visually toggle between Market/Limit orders, input specific
 ## Logs
 
 Detailed logs of all API interactions, including request parameters, URLs, and server responses, are written to `trading_bot.log`. Check this file if an order fails or to see the exact payload sent to Binance.
+
+
+![Web UI](asset/UI%20.png)
+![Testnet](asset/testnet%20image.png)
+![Sell UI](asset/sell%20ui.png)
 
 ## Assumptions
 
