@@ -1,12 +1,12 @@
 # Binance Futures Testnet Trading Bot
 <p align="center">
-  <img=
-![](asset/gif.gif)>
+  <img src="asset/gif.gif" width="400">
 </p>
 
 ![Web UI](asset/UI%20.png)
-![Sell UI](asset/sell%20ui.png)
 ![Testnet](asset/testnet%20image.png)
+![Sell UI](asset/sell%20ui.png)
+
 
 A simple Python CLI application to place Market and Limit orders on the Binance Futures Testnet (USDT-M).
 
