@@ -1,7 +1,7 @@
 # Binance Futures Testnet Trading Bot
 <p align="center">
-  <img>
-![](asset/gif.gif)
+  <img=
+![](asset/gif.gif)>
 </p>
 
 ![Web UI](asset/UI%20.png)
